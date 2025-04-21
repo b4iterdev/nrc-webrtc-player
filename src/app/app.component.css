@@ -9,7 +9,12 @@ video {
     width: 100%;
     margin-top: 5px;
 }
-
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5%;
+}
 .input-container {
     margin-top: 5px;
     display: flex;
@@ -37,7 +42,6 @@ video {
 .header-logo {
     height: 50px;
     margin: 0 auto;
-    padding-left: 0.5%;
 }
 
 .button-1 {
