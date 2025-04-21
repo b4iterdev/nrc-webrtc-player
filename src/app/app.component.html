@@ -6,13 +6,6 @@
   <button (click)="play()">Play</button>
   <button (click)="stop()">Stop</button>
   <div id="video-container">
-    <video id="webrtc-player" #videoPlayer autoplay playsinline controls></video>
+    <video id="webrtc-player" #videoPlayer muted autoplay playsinline controls></video>
   </div>
 </div>
-
-<style>
-  #video-container {
-    width: 640px;
-    height: 360px;
-  }
-</style>
