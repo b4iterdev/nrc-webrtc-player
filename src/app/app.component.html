@@ -4,6 +4,7 @@
   <label for="whepUrl">WHEP Endpoint URL:</label>
   <input type="text" id="whepUrl" [(ngModel)]="whepUrl" placeholder="Enter WHEP URL here" />
   <button (click)="play()">Play</button>
+  <button (click)="stop()">Stop</button>
   <div id="video-container">
     <video id="webrtc-player" #videoPlayer autoplay playsinline controls></video>
   </div>
