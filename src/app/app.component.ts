@@ -17,7 +17,7 @@ import { WebRTCPlayer } from '@eyevinn/webrtc-player';
   standalone: true,
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
-  whepUrl: string = '';
+  whepUrl: string = `${window.location.href}whep`;
   player: WebRTCPlayer | null = null;
   @ViewChild('videoPlayer') videoElementRef!: ElementRef<HTMLVideoElement>;
 
