@@ -30,6 +30,12 @@ jobs:
         zip -r ../release.zip ./*
         # Or use tar if you prefer:
         # tar -czvf ../angular-app.tar.gz ./*
+    
+    - name: Debug directory structure
+      run: |
+        pwd
+        ls -la
+        ls -la dist/
 
     - name: Upload release asset
       uses: actions/upload-release-asset@v1
@@ -37,6 +43,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
-        asset_path: /home/runner/work/nrc-webrtc-player/nrc-webrtc-player/dist/release.zip
+        asset_path: ./dist/release.zip
         asset_name: release.zip
         asset_content_type: application/zip
