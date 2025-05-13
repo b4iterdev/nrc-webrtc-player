@@ -27,7 +27,7 @@ jobs:
     - name: Create zip archive
       run: |
         cd dist/nrc-camera
-        zip -r ../release.zip ./*
+        zip -r release.zip ./*
         # Or use tar if you prefer:
         # tar -czvf ../angular-app.tar.gz ./*
 
